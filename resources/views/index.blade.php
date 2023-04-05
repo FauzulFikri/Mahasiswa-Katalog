@@ -63,7 +63,7 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="img/5.jpg" class="d-block w-100" alt="...">
+                  <img src="img/5c.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h3 class="text-light" style="font-family: Abril Fatface;">Third slide label</h3>
                     <p class="text-light" style="font-family: Abril Fatface;">Some representative placeholder content for the third slide.</p>

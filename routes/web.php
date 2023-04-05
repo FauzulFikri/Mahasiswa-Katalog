@@ -6,7 +6,7 @@ use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminUserController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 /* Admin Login */
