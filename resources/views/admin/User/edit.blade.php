@@ -3,7 +3,6 @@
 @section('heading', 'User Edit')
     
 @section('main_content')
-<body style="background-color: #F1F6F5;">
 
     <form action="{{ route('admin_user_update', $edit->id) }}" method="post">
         @csrf
@@ -21,54 +20,17 @@
                     <input type="text" class="form-control" id="Nama">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Foto</label>
-                    <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile01">
-                    </div>
-                    </div>
-                <div class="mb-3">
-                    <label for="NIM" class="form-label">NIM</label>
-                    <input type="text" class="form-control" id="NIM">
+                    <label for="" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="Email" name="email" placeholder="enter here"  >
+                </div>
+               <div class="mb-3">
+                      <label for="" class="form-label">Password</label>
+                      <input type="password" class="form-control" name="password" id="password" placeholder="enter here">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="alamat" class="form-label">Alamat</label>
-                    <input type="text" class="form-control" id="alamat">
-                </div>
-                <div class="col-md-6">
-                    <label for="jurusan" class="form-label">Jurusan</label>
-                    <input type="text" class="form-control" id="jurusan">
-                </div>
-                <div class="col-md-6">
-                    <label for="tahunMasuk" class="form-label">Tahun Masuk</label>
-                    <input type="text" class="form-control" id="tahunMasuk">
-                </div>
-                <div class="mb-3">
-                    <label for="kategori" class="form-label">Kategori</label>
-                    <select class="form-select" id="kategori">
-                        <option selected>Choose...</option>
-                        <option value="1">one</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                </div>
-                <div class="mb-3">
-                    <label for="talent" class="form-label">Talent</label>
-                    <select class="form-select" id="talent">
-                        <option selected>Choose...</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                </div>
-                <div class="mb-3">
-                    <label for="noHp" class="form-label">Nomor Handphone</label>
-                    <input type="email" class="form-control" id="noHp">
-                </div>
+                    <label for="" class="form-label">Retype Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="enter here">
+              </div>
                 <button type="submit" class="btn btn-outline-primary w-25 ">update</button>
             </form>
         </div>
