@@ -2,70 +2,55 @@
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <div class="container">
                 <div class="card p-sm-5">
+                    <img src="{{ asset('img/hu.JPG') }}"  class="img-fluid rounded-circle" width="100px"
+                    height="100px" alt="">
                     <form class="row g-3" action="" method="post" enctype="multipart/form-data">
-                        <div class="mb-3">
-                            <label for="Nama" class="form-label">Nama Mahasiswa</label>
-                            <input type="text" name="nama" id="nama" placeholder="Enter Nama" class="form-control" value="">      
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto</label>
-                            <div class="input-group mb-3">
-                                <input type="file" class="form-control" id="inputGroupFile01">
-                            </div>
-                            </div>
-                        <div class="mb-3">
-                            <label for="NIM" class="form-label">NIM</label>
-                            <input type="text" class="form-control" id="NIM">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="alamat" class="form-label">Alamat</label>
-                            <input type="text" class="form-control" id="alamat">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="jurusan" class="form-label">Jurusan</label>
-                            <input type="text" class="form-control" id="jurusan">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="tahunMasuk" class="form-label">Tahun Masuk</label>
-                            <input type="text" class="form-control" id="tahunMasuk">
-                        </div>
-                        <div class="mb-3">
-                            <label for="kategori" class="form-label">Kategori</label>
-                            <select class="form-select" id="kategori">
-                                <option selected>Choose...</option>
-                                <option value="1">one</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="talent" class="form-label">Talent</label>
-                            <select class="form-select" id="talent">
-                                <option selected>Choose...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="desk" class="form-label">Deskripsi</label>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
-                          </div>
-                        <div class="mb-3">
-                            <label for="noHp" class="form-label">Nomor Handphone</label>
-                            <input type="email" class="form-control" id="noHp">
-                        </div>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                  <td>Nama</td>
+                                  <td>Hudiya Mubarokah</td>
+                                </tr>
+                                <tr>
+                                  <td>NIM</td>
+                                  <td>21076056</td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat Email</td>
+                                    <td>hud@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat</td>
+                                    <td>Hudiya Mubarokah</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jurusan</td>
+                                    <td>21076056</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Tahun Masuk</td>
+                                      <td>hud@gmail.com</td>
+                                  </tr>
+                                  <tr>
+                                    <td>kategori</td>
+                                    <td>Hudiya Mubarokah</td>
+                                  </tr>
+                                  <tr>
+                                    <td>talent</td>
+                                    <td>21076056</td>
+                                  </tr>
+                                  <tr>
+                                      <td>no handphone</td>
+                                      <td>hud@gmail.com</td>
+                                  </tr>
+                              </tbody>
+                          </table>
                     </form>
                 </div>
             </div>
@@ -108,27 +93,25 @@
                       </div>
                   </div>
             </div>
-          </div>
+        </div>        
+    <div class="container p-5"> 
+    <div class="card text-start " style="background-color: #4E31AA; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.504);">
+        <div class="row">
+        <div class="col-sm-6 col-md-6 p-5 text-white">
+            <h1 style="font-family: Prata;"> Ayo Lengkapi<br> Data Kamu </h1>
             
-<div class="container p-5"> 
- 
-  <div class="card text-start " style="background-color: #4E31AA; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.504);">
-    <div class="row">
-      <div class="col-sm-6 col-md-6 p-5 text-white">
-          <h1 style="font-family: Prata;"> Ayo Lengkapi<br> Data Kamu </h1>
-          
-          <p style="font-size: 15px;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cupiditate eos porro a, 
-            unde corrupti fuga ea eum vero, saepe nemo accusamus nesciunt tempora! Aut ducimus porro perferendis id hic!
-          </p>
-          <a href="" class="btn btn-primary">Lengkapi data</a>
-      </div>
-      <div class="col-md-6">
-        <div class="card" style="height: 400px;">
-          <img style="height: 400px;" src="{{ asset('img/2.jpg') }}" alt="...">
+            <p style="font-size: 15px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cupiditate eos porro a, 
+                unde corrupti fuga ea eum vero, saepe nemo accusamus nesciunt tempora! Aut ducimus porro perferendis id hic!
+            </p>
+            <a href="" class="btn btn-primary">Lengkapi data</a>
         </div>
-      </div>
+        <div class="col-md-6">
+            <div class="card" style="height: 400px;">
+            <img style="height: 400px;" src="{{ asset('img/2.jpg') }}" alt="...">
+            </div>
+        </div>
+        </div>
     </div>
-  </div>
-  </div>
-</div>
+    </div>
+    </div>

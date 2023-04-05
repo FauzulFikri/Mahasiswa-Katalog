@@ -11,7 +11,7 @@
         <div class="p-2">
                 <img style="height: 30px;"  class="rounded-circle" src="{{ asset('img/hu.JPG') }}" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
         </div>
-        <a class="nav-link active text-white" aria-current="page" href="/login.html">Logout</a>
+        <a class="nav-link active text-white" aria-current="page" href="">Logout</a>
       </div>
     </div>
      </div>
