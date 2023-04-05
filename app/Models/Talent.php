@@ -4,19 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Admin extends Authenticatable
+class Talent extends Model
 {
     use HasFactory;
 
-    protected $table = 'admins';
+    protected $table = 'talents';
 
     protected $guarded = [
         'id'
     ];
 
     protected $fillable = [
-        'nama', 'email', 'password', 'photo', 'token'
-    ];
+        'kategori', 'nama_bakat'
+    ]; 
 }
