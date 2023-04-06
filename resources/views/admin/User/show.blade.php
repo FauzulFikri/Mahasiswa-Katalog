@@ -18,34 +18,23 @@
         <table class="table">
         <thead class="table-light">
             <tr>
-                <th scope="col">NIM</th>
-                <th scope="col">image</th>
-                <th scope="col">NAMA</th>
+                <th scope="col">No</th>
+                <th scope="col">Nama</th>
                 <th scope="col">email</th>
-                <th scope="col">alamat</th>
-                <th scope="col">jurusan</th>
-                <th scope="col">tahun masuk</th>
-                <th scope="col">skill</th>
-                <th scope="col">kategori</th>
-                <th scope="col">no hp</th>
-                <th scope="col"></th>
+                <th scope="col">Action</th>
               </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td><img src="{{ asset('img/3.png') }}" width="60" alt="" class="rounded-circle"></td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Otto</td> 
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Otto</td> 
-                <td> <button type="button" class="btn btn-primary" href="">EDIT</button>
-                    <button type="button" class="btn btn-danger">DELETE</button></td>
-              </tr>
+            @foreach ($user as $item)
+                <tr>         
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $item->name }}</td>
+                    <td>{{ $item->email }}</td> 
+                    <td> <a href="{{ route('admin_user_edit', $item->id ) }}" button type="button" class="btn btn-primary">EDIT</a>
+                        <a href="{{ route('admin_user_delete', $item->id ) }}" button type="button" class="btn btn-danger">DELETE</a>
+                    </td>
+                </tr>
+            @endforeach
         </tbody>
       </table>
     </div>

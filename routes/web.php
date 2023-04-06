@@ -25,6 +25,6 @@ Route::middleware('admin:admin')->group(function (){
     Route::get('/admin/user/create', [AdminUserController::class, 'create'])->name('admin_user_create');
     Route::post('/admin/user/store', [AdminUserController::class, 'store'])->name('admin_user_store');
     Route::get('/admin/user/edit/{id}', [AdminUserController::class, 'edit'])->name('admin_user_edit');
-    Route::get('/admin/user/update/{id}', [AdminUserController::class, 'update'])->name('admin_user_update');
+    Route::post('/admin/user/update/{id}', [AdminUserController::class, 'update'])->name('admin_user_update');
     Route::get('/admin/user/delete/{id}', [AdminUserController::class, 'delete'])->name('admin_user_delete');
 });

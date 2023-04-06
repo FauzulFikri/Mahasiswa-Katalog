@@ -16,17 +16,9 @@
                 <ul class="dropdown-menu">
                     <li class="active"><a class="nav-link" href="{{ route('admin_user_create') }}"><i class="fas fa-angle-right"></i>User Create</a></li>
                     <li class="active"><a class="nav-link" href="{{ route('admin_user_show') }}"><i class="fas fa-angle-right"></i>User Show</a></li>
+                    <li class="active"><a class="nav-link" href=""><i class="fas fa-angle-right"></i>User Edit</a></li>
                 </ul>
             </li>
-
-            <li class=""><a class="nav-link" href="setting.html"><i class="fas fa-hand-point-right"></i> <span>Setting</span></a></li>
-
-            <li class=""><a class="nav-link" href="form.html"><i class="fas fa-hand-point-right"></i> <span>Form</span></a></li>
-
-            <li class=""><a class="nav-link" href="table.html"><i class="fas fa-hand-point-right"></i> <span>Table</span></a></li>
-
-            <li class=""><a class="nav-link" href="invoice.html"><i class="fas fa-hand-point-right"></i> <span>Invoice</span></a></li>
-
         </ul>
     </aside>
 </div>

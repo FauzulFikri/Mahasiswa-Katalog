@@ -23,18 +23,18 @@ class AdminUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required',
-            'email' => 'required',
+            'name' => 'required',
+            'email' => 'required|email',
             'password' => 'required|confirmed',
         ]);
 
         $store = new User();
-        $store->nama = $request->nama;
+        $store->name = $request->name;
         $store->email = $request->email;
         $store->password = Hash::make($request->password);
         $store->save();
 
-        return redirect()->route('admin_user_show')->with('success', 'data berhasil ditambahkan');
+        return redirect()->route('admin_user_show')->with('success', 'data berhasil ditambahkan'); 
     }
 
     public function edit($id)
@@ -46,11 +46,11 @@ class AdminUserController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'nama' => 'required',
+            'name' => 'required',
             'email' => 'required',
         ]);
         $update = User::where('id', $id)->first();
-        $update->nama = $request->nama;
+        $update->name = $request->name;
         $update->email = $request->email;
         if ($request->password != '') {
             $request->validate([
