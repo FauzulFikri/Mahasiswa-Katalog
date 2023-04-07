@@ -23,7 +23,7 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
+                    <a class="nav-link active text-white" aria-current="page" href="">Home</a>
                   </li>
                   <li class="nav-item">
                     <!-- <a class="nav-link text-white" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Find Talent</a> -->
@@ -31,8 +31,8 @@
                   
                   </li>
                 </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" action="" method="get">
+                      <input class="form-control me-2 " type="text"  name="keyword" placeholder="Search" aria-label="Search">
                     </form>
                     <a class="nav-link active text-white" aria-current="page" href="/login.html">Login</a>
               </div>
