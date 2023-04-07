@@ -1,15 +1,19 @@
 <?php
 
+use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\User\UserHomeController;
 use App\Http\Controllers\User\UserLoginController;
+// use App\Http\Controllers\homeController;
 
 Route::get('/', function () {
     return view('index');
 });
+
+// Route::get('/', [homeController::class, 'index'])->name('index');
 
 /* Admin Login */
 Route::get('/admin/home', [AdminHomeController::class, 'index'])->name('admin_home')->middleware('admin:admin');
