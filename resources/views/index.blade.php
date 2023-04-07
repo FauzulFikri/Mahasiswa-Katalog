@@ -34,7 +34,7 @@
                     <form class="d-flex">
                       <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
                     </form>
-                    <a class="nav-link active text-white" aria-current="page" href="/login.html">Login</a>
+                    <a class="nav-link active text-white" aria-current="page" href="{{ route('user_login') }}">Login</a>
               </div>
             </div>
              </div>

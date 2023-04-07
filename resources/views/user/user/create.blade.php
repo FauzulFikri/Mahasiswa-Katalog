@@ -1,4 +1,8 @@
+@extends('user.layout.app')
 
+@section('heading', 'User Edit Profile')
+    
+@section('main_content')
 
         <div class="container">
             <div class="h4 text-white">Fomulir Mahasiswa</div>
@@ -68,3 +72,4 @@
             </form>
         </div>
     </div>
+@endsection

@@ -26,16 +26,30 @@
                 <h3 class="font-weight-bold text-dark" style="font-family: poppins;"  id="exampleModalLabel">Login</h3>
                 </p>
             </div>
+            @if (session()->get('success'))
+                <div class="alert alert-success">{{ session()->get('success') }}</div>
+            @elseif (session()->get('error'))
+                <div class="alert alert-danger">{{ session()->get('error') }}</div>
+            @endif
             <div class="login-form">
-                <form action="{{ route('route-login') }}" method="POST">
+                <form action="{{ route('user_login_submit') }}" method="POST">
                     @csrf
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email Address</label>
-                      <input type="email" class="form-control border border-dark" id="exampleInputEmail1" placeholder="email">
+                      <label for="" class="form-label">Email Address</label>
+                      <input type="email" class="form-control border border-dark @error ('email') is-invalid @enderror" name="email" placeholder="email" value="{{ old('email') }}">
+                      @error('email')
+                            <div class="text-danger">{{ $message }}</div>
+                      @enderror
+                      @if (session()->get('error'))
+                            <div class="text-danger">{{ session()->get('error') }}</div>
+                      @endif
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control border border-dark" id="exampleInputPassword1" placeholder="Password">
+                      <input type="password" class="form-control border border-dark @error ('password') is-invalid @enderror" name="password" placeholder="Password">
+                      @error('password')
+                            <div class="text-danger">{{ $message }}</div>
+                      @enderror
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Login</button>

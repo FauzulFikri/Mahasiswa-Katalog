@@ -1,3 +1,8 @@
+@extends('user.layout.app')
+
+@section('heading', 'User Edit Profile')
+    
+@section('main_content')
 <div class="container">
     <div class="d-flex justify-content-between py-3">
         <div class="h4">Edit Mahasiswa</div>
@@ -63,3 +68,4 @@
         </form>
     </div>
 </div>
+@endsection

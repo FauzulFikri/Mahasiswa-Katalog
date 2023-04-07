@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\User\UserHomeController;
+use App\Http\Controllers\User\UserLoginController;
 
 Route::get('/', function () {
     return view('index');
@@ -28,3 +30,14 @@ Route::middleware('admin:admin')->group(function (){
     Route::post('/admin/user/update/{id}', [AdminUserController::class, 'update'])->name('admin_user_update');
     Route::get('/admin/user/delete/{id}', [AdminUserController::class, 'delete'])->name('admin_user_delete');
 });
+
+/* User Login */
+Route::get('/user/home', [UserHomeController::class, 'index'])->name('user_home');
+Route::get('/user/login', [UserLoginController::class, 'index'])->name('user_login');
+Route::post('/user/login-submit', [UserLoginController::class, 'login_submit'])->name('user_login_submit');
+Route::get('/user/logout', [UserLoginController::class, 'logout'])->name('user_logout');
+Route::get('/user/forget-password', [UserLoginController::class, 'forget_password'])->name('user_forget_password');
+Route::post('/user/forget-password-submit', [UserLoginController::class, 'forget_password_submit'])->name('user_forget_password_submit');
+Route::get('/user/reset-password/{token}/{email}', [UserLoginController::class, 'reset_password'])->name('user_reset_password');
+Route::post('/user/reset-password-submit', [UserLoginController::class, 'reset_password_submit'])->name('user_reset_password_submit');
+
