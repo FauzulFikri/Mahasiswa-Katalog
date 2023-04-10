@@ -11,7 +11,7 @@ use Laravel\Scout\Searchable;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable, Searchable;
+    use HasApiTokens, HasFactory, Notifiable;
 
     protected $table = 'users';
 
@@ -28,6 +28,7 @@ class User extends Authenticatable
         'no_telp', 'deskripsi', 'token'
     ];
 
+    /*
     public function toSearchableArray()
         {
             return [
@@ -39,5 +40,6 @@ class User extends Authenticatable
                 'deskripsi' => $this->deskripsi,
             ];
         }
+    */
 
 }

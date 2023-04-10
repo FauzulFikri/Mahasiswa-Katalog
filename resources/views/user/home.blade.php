@@ -44,7 +44,7 @@
               <div class="card p-sm-5">
                   <img src="{{ asset('img/hu.JPG') }}"  class="img-fluid rounded-circle" width="100px"
                   height="100px" alt="">
-                  <form class="row g-3" action="" method="post" enctype="multipart/form-data">
+                  <form class="row g-3" action="{{ route('user_profile_submit') }}" method="post" enctype="multipart/form-data">
                       <table class="table table-borderless">
                           <tbody>
                               <tr>
@@ -92,7 +92,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="" type="button" class="btn btn-primary" >Edit Profil</a>
+        <a href="{{ route('user_user_edit') }}" type="button" class="btn btn-primary" >Edit Profil</a>
       </div>
     </div>
   </div>
@@ -138,7 +138,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cupiditate eos porro a, 
               unde corrupti fuga ea eum vero, saepe nemo accusamus nesciunt tempora! Aut ducimus porro perferendis id hic!
           </p>
-          <a href="" class="btn btn-primary">Lengkapi data</a>
+          <a href="{{ route('user_user_edit') }}" class="btn btn-primary">Lengkapi data</a>
       </div>
       <div class="col-md-6">
           <div class="card" style="height: 400px;">
