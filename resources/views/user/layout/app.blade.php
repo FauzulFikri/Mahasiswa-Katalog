@@ -28,6 +28,7 @@
                     </div> --}}
                 </div>
 
+                @yield('main_content')
 
             </section>
         </div>

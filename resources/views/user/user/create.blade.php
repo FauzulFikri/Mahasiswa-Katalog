@@ -9,7 +9,7 @@
         </div>
     <div class="container p-5">
         <div class="card p-sm-5">
-            <form class="row g-3"  action="" method="post" enctype="multipart/form-data">
+            <form class="row g-3"  action="{{ route('user_user_create') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                     <label for="Nama" class="form-label">Nama Mahasiswa</label>
