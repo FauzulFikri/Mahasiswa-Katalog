@@ -8,7 +8,8 @@ use Laravel\Scout\Searchable;
 
 class Talent extends Model
 {
-    use HasFactory, Searchable;
+    use HasFactory;
+    //Searchable;
 
     protected $table = 'talents';
 
@@ -20,11 +21,11 @@ class Talent extends Model
         'kategori', 'nama_bakat'
     ]; 
 
-    public function toSearchableArray()
-{
+    /*public function toSearchableArray()
+    {
     return [
         'kategori' => $this->kategori,
         'nama_bakat' => $this->nama_bakat,
     ];
-}
+    }*/
 }

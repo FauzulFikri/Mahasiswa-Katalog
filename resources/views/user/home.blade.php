@@ -44,32 +44,32 @@
               <div class="card p-sm-5">
                   <img src="{{ asset('img/hu.JPG') }}"  class="img-fluid rounded-circle" width="100px"
                   height="100px" alt="">
-                  <form class="row g-3" action="{{ route('user_profile_submit') }}" method="post" enctype="multipart/form-data">
+                  <form class="row g-3" action="{{ route('user_user_store') }}" method="post" enctype="multipart/form-data">
                       <table class="table table-borderless">
                           <tbody>
                               <tr>
                                 <td>Nama</td>
-                                <td>Hudiya Mubarokah</td>
+                                <td></td>
                               </tr>
                               <tr>
                                 <td>NIM</td>
-                                <td>21076056</td>
-                              </tr>
-                              <tr>
-                                  <td>Alamat Email</td>
-                                  <td>hud@gmail.com</td>
+                                <td></td>
                               </tr>
                               <tr>
                                   <td>Alamat</td>
-                                  <td>Hudiya Mubarokah</td>
+                                  <td></td>
                                 </tr>
                                 <tr>
                                   <td>Jurusan</td>
-                                  <td>21076056</td>
+                                  <td></td>
                                 </tr>
                                 <tr>
                                     <td>Tahun Masuk</td>
-                                    <td>hud@gmail.com</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                  <td>no handphone</td>
+                                  <td></td>
                                 </tr>
                                 <tr>
                                   <td>kategori</td>
@@ -79,11 +79,7 @@
                                   <td>talent</td>
                                   <td>21076056</td>
                                 </tr>
-                                <tr>
-                                    <td>no handphone</td>
-                                    <td>hud@gmail.com</td>
-                                </tr>
-                            </tbody>
+                          </tbody>
                         </table>
                   </form>
               </div>
@@ -92,7 +88,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="{{ route('user_user_edit') }}" type="button" class="btn btn-primary" >Edit Profil</a>
+        <a href="{{ route('user_user_create') }}" type="button" class="btn btn-primary" >Edit Profil</a>
       </div>
     </div>
   </div>
@@ -138,7 +134,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cupiditate eos porro a, 
               unde corrupti fuga ea eum vero, saepe nemo accusamus nesciunt tempora! Aut ducimus porro perferendis id hic!
           </p>
-          <a href="{{ route('user_user_edit') }}" class="btn btn-primary">Lengkapi data</a>
+          <a href="{{ route('user_user_create') }}" class="btn btn-primary">Lengkapi data</a>
       </div>
       <div class="col-md-6">
           <div class="card" style="height: 400px;">

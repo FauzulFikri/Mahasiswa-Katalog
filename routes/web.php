@@ -1,17 +1,13 @@
 <?php
 
-use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\User\UserHomeController;
 use App\Http\Controllers\User\UserLoginController;
-<<<<<<< HEAD
 use App\Http\Controllers\User\UserProfileController;
-=======
-// use App\Http\Controllers\homeController;
->>>>>>> 2addcfb5085ae67776583b6d2b225408f7a3e258
+use App\Http\Controllers\User\UserStudentController;
 
 Route::get('/', function () {
     return view('index');
@@ -50,13 +46,14 @@ Route::get('/user/reset-password/{token}/{email}', [UserLoginController::class, 
 Route::post('/user/reset-password-submit', [UserLoginController::class, 'reset_password_submit'])->name('user_reset_password_submit');
 
 /* User Isi Data */
-/*Route::get('/user/user/show', [UserProfileController::class, 'show'])->name('user_user_show');
-Route::get('/user/user/create', [UserProfileController::class, 'create'])->name('user_user_create');
-Route::post('/user/user/store', [UserProfileController::class, 'store'])->name('user_user_store');
-Route::get('/user/user/edit', [UserProfileController::class, 'edit'])->name('user_user_edit');
-Route::post('/user/user/update', [UserProfileController::class, 'update'])->name('user_user_update');
-Route::get('/user/user/delete', [UserProfileController::class, 'delete'])->name('user_user_delete');*/
+Route::get('/user/user/show', [UserStudentController::class, 'show'])->name('user_user_show');
+Route::get('/user/user/create', [UserStudentController::class, 'create'])->name('user_user_create');
+Route::post('/user/user/store', [UserStudentController::class, 'store'])->name('user_user_store');
+Route::get('/user/user/edit', [UserStudentController::class, 'edit'])->name('user_user_edit');
+Route::post('/user/user/update', [UserStudentController::class, 'update'])->name('user_user_update');
+Route::get('/user/user/delete', [UserStudentController::class, 'delete'])->name('user_user_delete');
 
 /* User Tambah Data */
-Route::get('/user/user/edit', [UserProfileController::class, 'index'])->name('user_user_edit');
-Route::post('/user/user/profile-submit', [UserProfileController::class, 'profile_submit'])->name('user_profile_submit');
+/*Route::get('/user/user/edit', [UserProfileController::class, 'index'])->name('user_user_edit');
+Route::get('/user/user/create', [UserProfileController::class, 'create'])->name('user_user_create');
+Route::post('/user/user/profile-submit', [UserProfileController::class, 'profile_submit'])->name('user_profile_submit');*/

@@ -184,7 +184,7 @@
         <div class="col">
           <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
             <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+              <h5 class="card-title text-center">{{  }}</h5>
               <p class="card-text text-end">1000 peserta
               </p>
               <a href="">see more</a>

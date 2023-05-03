@@ -16,7 +16,7 @@
         <form class="row g-3">
             <div class="mb-3">
                 <label for="Nama" class="form-label">Nama Mahasiswa</label>
-                <input type="text" class="form-control" id="Nama" >
+                <input type="text" class="form-control" id="Nama">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Photo</label>
