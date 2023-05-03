@@ -225,7 +225,92 @@
       <div class="container">
         
         <h2>Cari talent berdasarkan kategori</h2>
+<<<<<<< HEAD
      
+=======
+      <div class="row row-cols-1 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-body">
+              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+              <p class="card-text text-end">1000 peserta
+              </p>
+              <a href="">see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{  }}</h5>
+              <p class="card-text text-end">1000 peserta
+              </p>
+              <a href="">see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-body">
+              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+              <p class="card-text text-end">1000 peserta
+              </p>
+              <a href="">see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-body">
+              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+              <p class="card-text text-end">1000 peserta
+              </p>
+              <a href="">see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-body">
+              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+              <p class="card-text text-end">1000 peserta
+              </p>
+              <a href="">see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-body">
+              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+              <p class="card-text text-end">1000 peserta
+              </p>
+              <a href="">see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-body">
+              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+              <p class="card-text text-end">1000 peserta
+              </p>
+              <a href="">see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+            <div class="card-body">
+              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+              <p class="card-text text-end">1000 peserta
+              </p>
+              <a href="">see more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+>>>>>>> f9d7035159257de44c15f9185c0eeccdc2808f92
     </div>
 
 <br><br>

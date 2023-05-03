@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -23,37 +24,23 @@ class AdminUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'name' => 'required',
             'email' => 'required|email',
             'password' => 'required|confirmed',
-            'nim' => 'required',
-            'jurusan' => 'required',
-            'alamat' => 'required',
-            'tahun_masuk' => 'required',
-            'no_telp' => 'required',
-            'deskripsi' => 'required',
         ]);
 
-        $ext = $request->file('photo')->extension();
-        $final_name =  date('YmdHis').'.'.$ext;
-
-        $request->file('photo')->move(public_path('uploads/'),$final_name);
+        $tambah = new Student();
+        $tambah->name = $request->name;
+        $tambah->save();
 
         $store = new User();
-        $store->photo = $final_name;
         $store->name = $request->name;
         $store->email = $request->email;
-        $store->nim = $request->nim;
-        $store->jurusan = $request->jurusan;
-        $store->alamat = $request->alamat;
-        $store->tahun_masuk = $request->tahun_masuk;
-        $store->no_telp = $request->no_telp;
-        $store->deskripsi = $request->deskripsi;
         $store->password = Hash::make($request->password);
         $store->save();
 
-        return redirect()->route('admin_user_show')->with('success', 'data berhasil ditambahkan'); 
+        return redirect()->route('admin_user_show')->with('success', 'data berhasil ditambahkan');
+  
     }
 
     public function edit($id)
@@ -68,6 +55,7 @@ class AdminUserController extends Controller
             'name' => 'required',
             'email' => 'required',
         ]);
+
         $update = User::where('id', $id)->first();
         $update->name = $request->name;
         $update->email = $request->email;

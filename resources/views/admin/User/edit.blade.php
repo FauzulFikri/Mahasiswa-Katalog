@@ -17,7 +17,7 @@
             <form class="row g-3">
                 <div class="mb-3">
                     <label for="name" class="form-label">Nama Mahasiswa</label>
-                    <input type="text" class="form-control" id="name" name="name" value="{{ $edit->nama }}">
+                    <input type="text" class="form-control" id="name" name="name" value="{{ $edit->name }}">
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Email address</label>
@@ -31,7 +31,7 @@
                     <label for="" class="form-label">Retype Password</label>
                     <input type="password" class="form-control" name="password_confirmation" id="password" placeholder="enter here">
               </div>
-                <button type="submit" class="btn btn-outline-primary w-25 ">update</button>
+                <button type="submit" class="btn btn-outline-primary w-25 ">UPDATE</button>
             </form>
         </div>
     </div>
