@@ -6,11 +6,6 @@ use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\User\UserHomeController;
 use App\Http\Controllers\User\UserLoginController;
-<<<<<<< HEAD
-use App\Http\Controllers\User\UserProfileController;
-=======
-// use App\Http\Controllers\homeController;
->>>>>>> 2addcfb5085ae67776583b6d2b225408f7a3e258
 
 Route::get('/', function () {
     return view('index');

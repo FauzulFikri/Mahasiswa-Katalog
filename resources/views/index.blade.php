@@ -13,13 +13,13 @@
             <link rel="stylesheet" href="style.css">
     </head>
     <body style="background-color: #F1F6F5;">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183; height: 70px">
             <div class="container text-white">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <img style="height: 30px;" src="img/logounp.png" alt="">
-              <a class="navbar-brand text-white" href="#">Talent UNP</a>
+              <a class="navbar-brand text-white" style="h3" href="#">Talent UNP</a>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
@@ -35,6 +35,7 @@
                       <input class="form-control me-2 " type="text"  name="keyword" placeholder="Search" aria-label="Search">
                     </form>
                     <a class="nav-link active text-white" aria-current="page" href="{{ route('user_login') }}">Login</a>
+                    <a class="nav-link active text-white" aria-current="page" href="{{ route('user_login') }}">register</a>
               </div>
             </div>
              </div>
@@ -42,55 +43,109 @@
           </nav>
 
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="carousel-inner" style="height: 600px">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/2.jpg" class="d-block w-100"  alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="height: 50%">
+                      <h3 class="text-light" style="font-family: Abril Fatface;">First slide label</h3>
+                      <p class="text-light" style="font-family: Abril Fatface;">Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="height: 50%">
+                      <h3 class="text-light" style="font-family: Abril Fatface;">Second slide label</h3>
+                      <p class="text-light" style="font-family: Abril Fatface;">Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/5c.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="height: 50%">
+                      <h3 class="text-light" style="font-family: Abril Fatface;">Third slide label</h3>
+                      <p class="text-light" style="font-family: Abril Fatface;">Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="img/2.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3 class="text-light" style="font-family: Abril Fatface;">First slide label</h3>
-                    <p class="text-light" style="font-family: Abril Fatface;">Some representative placeholder content for the first slide.</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="img/3.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3 class="text-light" style="font-family: Abril Fatface;">Second slide label</h3>
-                    <p class="text-light" style="font-family: Abril Fatface;">Some representative placeholder content for the second slide.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="img/5c.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3 class="text-light" style="font-family: Abril Fatface;">Third slide label</h3>
-                    <p class="text-light" style="font-family: Abril Fatface;">Some representative placeholder content for the third slide.</p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+             
         
           
           <div class=" m-5 text-center ">
-            <h1 style="font-family: Prata;">YOU CAN FIND TALENT</h1>
-            <p class="container p-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cupiditate eos porro a, 
-              unde corrupti fuga ea eum vero, saepe nemo accusamus nesciunt tempora! Aut ducimus porro perferendis id hic!
-            </p>
+            <h1 style="font-family: Prata;">AYO TEMUKAN BAKAT <br> KAMU CARI</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+              <div class="col w-25">
+                <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+                  <div class="card-body">
+                    <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+                    <p class="card-text text-end">1000 peserta
+                    </p>
+                    <a href="">see more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col  w-25">
+                <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+                  <div class="card-body">
+                    <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+                    <p class="card-text text-end">1000 peserta
+                    </p>
+                    <a href="">see more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col  w-25">
+                <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+                  <div class="card-body">
+                    <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+                    <p class="card-text text-end">1000 peserta
+                    </p>
+                    <a href="">see more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+                  <div class="card-body">
+                    <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+                    <p class="card-text text-end">1000 peserta
+                    </p>
+                    <a href="">see more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+                  <div class="card-body">
+                    <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+                    <p class="card-text text-end">1000 peserta
+                    </p>
+                    <a href="">see more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+                  <div class="card-body">
+                    <h5 class="card-title text-center"> Komputer dan jaringan</h5>
+                    <p class="card-text text-end">1000 peserta
+                    </p>
+                    <a href="">see more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         
-        <div class="container position-relative "> 
+        {{-- <div class="container position-relative "> 
          
           <div class="card text-start " style="background-color: #7B6CF6; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.504);">
             <div class="row">
@@ -145,10 +200,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
 
        
-       <br><br>  
+       {{-- <br><br>  
       <br>
       <br>
       
@@ -164,94 +219,13 @@
               autem nesciunt iure provident rem sit libero mollitia ad delectus error laudantium.</p>
           </div>
         </div>
-      </div>
+      </div> --}}
        
 <br>
       <div class="container">
         
         <h2>Cari talent berdasarkan kategori</h2>
-      <div class="row row-cols-1 row-cols-md-4 g-3">
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> Komputer dan jaringan</h5>
-              <p class="card-text text-end">1000 peserta
-              </p>
-              <a href="">see more</a>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
 
 <br><br>
