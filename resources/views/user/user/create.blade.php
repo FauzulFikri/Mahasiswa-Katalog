@@ -12,7 +12,7 @@
             <form class="row g-3"  action="{{ route('user_user_store') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <label for="name" class="form-label">Nama Mahasiswa</label>
+                    <label for="name" class="form-label">Nama</label>
                     <input type="text" class="form-control" id="name" name="name">
                 </div>
                 <div class="mb-3">
@@ -22,30 +22,27 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="NIM" class="form-label">NIM</label>
+                    <label for="email" class="form-label">Alamat Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="NIM" class="form-label">No.Pengenal</label>
                     <input type="text" name="nim" id="nim" placeholder="Enter Nim" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="alamat" class="form-label">Alamat</label>
-                    <input type="text" class="form-control" id="alamat" name="alamat">
-                </div>
-                <div class="col-md-6">
-                    <label for="jurusan" class="form-label">Jurusan</label>
-                    <input type="text" class="form-control" id="jurusan" name="jurusan">
-                </div>
-                <div class="col-md-6">
-                    <label for="tahunMasuk" class="form-label">Tahun Masuk</label>
-                    <input type="text" class="form-control" id="tahun_masuk" name="tahun_masuk">
+                    <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                    <input type="text" class="form-control" id="pekerjaan" name="pekerjaan">
                 </div>
                 <div class="mb-3">
                     <label for="desk" class="form-label">Deskripsi</label>
-                    <textarea class="form-control" id="deskripsi" name="deskripsi" aria-label="With textarea"></textarea>
+                    <textarea class="form-control" id="deskripsi" name="deskripsi" aria-label="With textarea" aria-describedby="desHelp"></textarea>
+                    <div id="desHelp" class="form-text">Isilah deskripsi dengan detail prestasi, pegalaman, dan segala sesuatu yang berkait dengan talent anda</div>
                   </div>
                 <div class="mb-3">
                     <label for="noHp" class="form-label">Nomor Handphone</label>
                     <input type="text" class="form-control" id="no_telp" name="no_telp">
                 </div>
-                <button type="submit" class="btn btn-primary w-25 ">Submit</button>
+                <button type="submit" class="btn w-25 text-white " style="background-color: #604FDD">Submit</button>
             </form>
         </div>
     </div>

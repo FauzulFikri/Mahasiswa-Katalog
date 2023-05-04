@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Talent UNP</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -11,8 +13,9 @@
             crossorigin="anonymous">
             <link rel="stylesheet" href="style.css">
     </head>
+
     <body style="background-color: #F1F6F5;">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183;">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183;">
             <div class="container text-white">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +35,7 @@
 
           </nav>
 
-<div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade modal-fullscreen-md-down" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
@@ -52,7 +55,7 @@
                                 <td></td>
                               </tr>
                               <tr>
-                                <td>NIM</td>
+                                <td>No.Pengenal</td>
                                 <td></td>
                               </tr>
                               <tr>
@@ -60,7 +63,7 @@
                                   <td></td>
                                 </tr>
                                 <tr>
-                                  <td>Jurusan</td>
+                                  <td>Pekerjaan</td>
                                   <td></td>
                                 </tr>
                                 <tr>
@@ -73,11 +76,13 @@
                                 </tr>
                                 <tr>
                                   <td>kategori</td>
-                                  <td>Hudiya Mubarokah</td>
+                                  <td></td>
+                                  <td><a href="" button type="button" class="btn btn-link"><i class="fa fa-plus-circle" style="font-size:24px;color:green"></i></a></td>
                                 </tr>
                                 <tr>
                                   <td>talent</td>
-                                  <td>21076056</td>
+                                  <td></td>
+                                  <td><a href="" button type="button" class="btn btn-link"><i class="fa fa-plus-circle" style="font-size:24px;color:green"></i></a></td>
                                 </tr>
                           </tbody>
                         </table>
@@ -93,7 +98,7 @@
     </div>
   </div>
 </div>
- 
+
       <div class="container-md p-5">
         <div class="row g-4">
           <div class="col-6 col-md-4">
@@ -123,36 +128,91 @@
                     </div>
                 </div>
           </div>
-      </div>        
-  <div class="container p-5"> 
-  <div class="card text-start " style="background-color: #4E31AA; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.504);">
-      <div class="row">
-      <div class="col-sm-6 col-md-6 p-5 text-white">
-          <h1 style="font-family: Prata;"> Ayo Lengkapi<br> Data Kamu </h1>
-          
-          <p style="font-size: 15px;">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cupiditate eos porro a, 
-              unde corrupti fuga ea eum vero, saepe nemo accusamus nesciunt tempora! Aut ducimus porro perferendis id hic!
-          </p>
-          <a href="{{ route('user_user_create') }}" class="btn btn-primary">Lengkapi data</a>
-      </div>
-      <div class="col-md-6">
-          <div class="card" style="height: 400px;">
-          <img style="height: 400px;" src="{{ asset('img/2.jpg') }}" alt="...">
+      </div>       
+      <div  class="potition-relative">
+        <div class="  text-center ">
+          <h1 style="font-family: Prata;">AYO TEMUKAN BAKAT <br> KAMU CARI</h1>
+          <div class="row g-3 p-4">
+           
           </div>
+        </div>
+    <div class="row g-2">
+      <div class="col-6">
+        <img style="height: 300px;" src="{{ asset('img/3.jpg')}}" alt="">
       </div>
+      <div class="col-6">
+        <div class="">
+          <h1 style="font-family: Prata;">Gunakan Bakat-Bakat Terbaik<br>Universitas Negeri Padang</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit rem 
+            commodi ex aliquam fugiat velit! Vel, molestias optio, 
+            autem nesciunt iure provident rem sit libero mollitia ad delectus error laudantium.</p>
+          
+        </div>
       </div>
+    </div>
+      </div>
+     
+<div style="padding-left: 20px; padding-right: 20px;">
+<div class="text-white" style="background-color: #472183; ">
+<br>
+<div class="container">
+  <div class="box" style="padding-top: 30px">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <h5 class="color-base mb-2 " style="font-weight: bold; font-size: 20px;">Talent UNP</h5>
+        <p class="color-base " style="font-size: 18px;"> Mengumpulakn Bakat Terbaik <br> Universitas Negeri Padang</p>
+        <br>
+    </div>
+    <div class="col-md-6 col-lg-2">
+      <p class="color-base mb-2" style="font-weight:bold; font-size: 18px;">Help</p>
+      <a class=" btn" href="/" style="font-size: 15px; color:white">Home</a>
+      <br>
+      <a class="btn" href="" style="font-size: 15px; color:white">Find Talent</a>
+  </div>
+  <div class="col-md-6 col-lg-2">
+    <p class="color-base mb-2" style="font-weight:bold; font-size: 18px;">Platfrom</p>
+    <a class=" btn" href="/" style="font-size: 15px; color:white">Home</a>
+    <br>
+    <a class="btn" href="" style="font-size: 15px; color:white">Find Talent</a>
+</div>
+      <div class="col-md-6 col-lg-3">
+        <p class="color-base mb-2" style="font-weight: bold; font-size: 18px;">Contact</p>
+        <p style="font-size: 15px;" class="color-base "><i class="fa fa-map-marker "></i>
+            Jl. Prof. Dr. Hamka Air Tawar Padang
+
+        </p>
+        <p style="font-size: 15px;" class="color-base "><i class="fa fa-phone p-md-1"></i>+62
+            831-7061-0000</p>
+        <p style="font-size: 15px;" class="color-base "><i class="fa fa-envelope p-md-1"></i>loremipsum@gmail.com</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-8">
+      <div class="d-flex ">
+        <p class="color-base p-md-2" style="font-size: 15px; top:2px"> Follow us :</p>
+        <a href="" class="btn btn-social p-md-1 "><i style="font-size:20px; color:white" class="fa">&#xf16a;</i></a>
+        <a class="btn btn-social p-md-1" href=""><i style="font-size:20px; color:white" class="fa">&#xf232;</i></a>
+        <a class="btn btn-social p-md-1" href=""><i style="font-size:20px; color:white" class="fa fa-instagram"></i></a>
+        <a class="btn btn-social p-md-1" href=""><i style="font-size:20px; color:white" class="fa">&#xf09a;</i></a>
+        <a class="btn btn-social p-md-1" href=""><i class="material-icons" style="font-size:20px; color:white">call</i></a>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="d-flex">
+      <p class="color-base p-md-2 " style="font-size: 15px; top:2px"> Mobile :</p>
+        <a href="" class="btn btn-social p-md-1 "><i style="font-size:20px; color:white" class="fa fa-android"></i></a>
+    </div>
+    </div>
   </div>
   </div>
+</div>
+  <div class="container">
+          <hr style="height: 6px; background-color: black;">
+          <h5 style="font-size: 15px">Copyright &copy; Talent UNP</h5>
+          <br>
   </div>
-   
-  <footer class="sticky-footer">
-    <div style="background-color: #472183;">
-        <div class="container p-3 text-white">
-          <h5>Copyright &copy; Talent UNP</h5>
-      </div>
-      </div>
-    </footer>
+</div>
+</div>
   
   <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

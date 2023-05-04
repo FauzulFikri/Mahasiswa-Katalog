@@ -220,40 +220,60 @@
 <div style="padding-left: 20px; padding-right: 20px;">
   <div class="text-white" style="background-color: #472183; ">
     <br>
-    <div class="container" >
-<table class="table table-borderless text-white ">
-        <tbody>
-          <tr>
-            <td><h3>Talent UNP</h3></td>
-            <td><h4>Platform</h4></td>
-            <td><h4>Help</h4></td>
-            <td><h4>Contact</h4></td>
-          </tr>
-          <tr>
-            <td><h5>Kamu dapat menemukan </h5></td>
-            <td><h6>home</h6></td>
-            <td><h6>home</h6></td>
-            <td><h6>(02111) 512-5342</h6></td>
-          </tr>
-          <tr>
-            <td><h5>Talenta terbaik UNP</h5></td>
-            <td><h6>find talent</h6></td>
-            <td><h6>find talent</h6></td>
-            <td><h6>Jl.Prof.Dr.Hamka, <br> Air Tawar Barat, Kec.Padang Utara, <br> Kota.Padang,Sumatera Barat 25172</h6></td>
-          </tr>
-          <tr>
-            <td>Follow of :<img style="height: 30px; padding:3px;"  src="img/wa.png" alt=""><img style="height: 30px; padding:3px;"  src="img/hmm.png" alt=""><img style="height: 30px; padding:3px;" src="img/youtube-icon.png" alt=""> </td>
-            <td></td>
-            <td></td>
-            <td>Mobile : <img style="height: 30px; padding: 3px;" src="img/ad.png" alt=""> </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container">
+      <div class="box" style="padding-top: 30px">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <h5 class="color-base mb-2 " style="font-weight: bold; font-size: 20px;">Talent UNP</h5>
+            <p class="color-base " style="font-size: 18px;"> Mengumpulakn Bakat Terbaik <br> Universitas Negeri Padang</p>
+            <br>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <p class="color-base mb-2" style="font-weight:bold; font-size: 18px;">Help</p>
+          <a class=" btn" href="/" style="font-size: 15px; color:white">Home</a>
+          <br>
+          <a class="btn" href="" style="font-size: 15px; color:white">Find Talent</a>
+      </div>
+      <div class="col-md-6 col-lg-2">
+        <p class="color-base mb-2" style="font-weight:bold; font-size: 18px;">Platfrom</p>
+        <a class=" btn" href="/" style="font-size: 15px; color:white">Home</a>
+        <br>
+        <a class="btn" href="" style="font-size: 15px; color:white">Find Talent</a>
     </div>
-      
+          <div class="col-md-6 col-lg-3">
+            <p class="color-base mb-2" style="font-weight: bold; font-size: 18px;">Contact</p>
+            <p style="font-size: 15px;" class="color-base "><i class="fa fa-map-marker "></i>
+                Jl. Prof. Dr. Hamka Air Tawar Padang
+
+            </p>
+            <p style="font-size: 15px;" class="color-base "><i class="fa fa-phone p-md-1"></i>+62
+                831-7061-0000</p>
+            <p style="font-size: 15px;" class="color-base "><i class="fa fa-envelope p-md-1"></i>loremipsum@gmail.com</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-8">
+          <div class="d-flex ">
+            <p class="color-base p-md-2" style="font-size: 15px; top:2px"> Follow us :</p>
+            <a href="" class="btn btn-social p-md-1 "><i style="font-size:20px; color:white" class="fa">&#xf16a;</i></a>
+            <a class="btn btn-social p-md-1" href=""><i style="font-size:20px; color:white" class="fa">&#xf232;</i></a>
+            <a class="btn btn-social p-md-1" href=""><i style="font-size:20px; color:white" class="fa fa-instagram"></i></a>
+            <a class="btn btn-social p-md-1" href=""><i style="font-size:20px; color:white" class="fa">&#xf09a;</i></a>
+            <a class="btn btn-social p-md-1" href=""><i class="material-icons" style="font-size:20px; color:white">call</i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="d-flex">
+          <p class="color-base p-md-2 " style="font-size: 15px; top:2px"> Mobile :</p>
+            <a href="" class="btn btn-social p-md-1 "><i style="font-size:20px; color:white" class="fa fa-android"></i></a>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
       <div class="container">
-              <hr style="height: 9px; background-color: black;">
-              <h5>Copyright &copy; Talent UNP</h5>
+              <hr style="height: 6px; background-color: black;">
+              <h5 style="font-size: 15px">Copyright &copy; Talent UNP</h5>
               <br>
       </div>
 </div>
