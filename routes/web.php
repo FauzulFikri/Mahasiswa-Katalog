@@ -6,16 +6,17 @@ use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\User\UserHomeController;
 use App\Http\Controllers\User\UserLoginController;
-<<<<<<< HEAD
-=======
+
 use App\Http\Controllers\User\UserProfileController;
 use App\Http\Controllers\User\UserStudentController;
->>>>>>> f9d7035159257de44c15f9185c0eeccdc2808f92
 
 Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/user/register', function () {
+    return view('user.register');
+});
 // Route::get('/', [homeController::class, 'index'])->name('index');
 
 /* Admin Login */

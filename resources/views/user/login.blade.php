@@ -14,9 +14,20 @@
 </head>
 
 <body style="background-color: #F1F6F5;">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style=" height: 70px;  background-color: #472183;">
+        <div class="container text-white">
+          <div class="potition-relative">
+            <img style="height: 50px;" src="{{ asset('img/logounp.png') }}" alt="">
+            <a class="navbar-brand text-white" style="h2" href="#">Talent UNP</a>
+          </div>
+            <a class="nav-link active text-white " aria-current="page" href="/" >Back</a>
+          </div>
+          <hr style="height: 6px;">
+      </nav>
     
     <div class="container p-5 w-50 align-self-center">
-          <div class="card p-sm-5 border border-dark" style="background-color: white; ">
+          <div class="card p-sm-5 border border-dark" style="background-color: white; box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.504);">
             <div class="modal-header mx-auto">
                 <img src="{{ asset('img/logounp.png') }}" alt="" class="img-fluid" width="200px"
                     height="200px">
@@ -51,8 +62,12 @@
                             <div class="text-danger">{{ $message }}</div>
                       @enderror
                     </div>
+                    <a href="">Lupa Password?</a><br>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                    <div class="text-center p-3">
+                       <p>Belum memiliki akun?<a href="">Register sekarang</a></p>
                     </div>
                   </form>
             </div>
