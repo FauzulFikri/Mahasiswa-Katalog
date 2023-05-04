@@ -67,7 +67,7 @@
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                     <div class="text-center p-3">
-                       <p>Belum memiliki akun?<a href="">Register sekarang</a></p>
+                       <p>Belum memiliki akun?<a href="/user/register">Register sekarang</a></p>
                     </div>
                   </form>
             </div>
