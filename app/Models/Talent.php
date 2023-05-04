@@ -18,7 +18,7 @@ class Talent extends Model
     ];
 
     protected $fillable = [
-        'kategori', 'nama_bakat'
+        'kategori'
     ]; 
 
     /*public function toSearchableArray()
