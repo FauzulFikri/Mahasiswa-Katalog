@@ -56,20 +56,10 @@
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Nama Mahasiswa</label>
                                         <input type="text" class="form-control" id="name" name="name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Foto</label>
-                                        <div class="input-group mb-3">
-                                            <input type="file" class="form-control" id="photo" name="photo">
-                                        </div>
-                                    </div>
+                                    </div>  
                                     <div class="mb-3">
                                         <label for="NIM" class="form-label">NIM</label>
                                         <input type="text" name="nim" id="nim" class="form-control">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="Pekerjaan" class="form-label">Pekerjaan</label>
-                                        <input type="text" class="form-control" id="pekerjaan" name="pekerjaan">
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Alamat Email</label>
@@ -112,18 +102,8 @@
                                     <input type="text" class="form-control" id="name" name="name">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Foto</label>
-                                    <div class="input-group mb-3">
-                                        <input type="file" class="form-control" id="photo" name="photo">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
                                     <label for="NIM" class="form-label">Nomor Kartu Pegawai</label>
                                     <input type="text" name="nim" id="nim" class="form-control">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="Pekerjaan" class="form-label">Pekerjaan</label>
-                                    <input type="text" class="form-control" id="pekerjaan" name="pekerjaan">
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Alamat Email</label>
@@ -166,18 +146,8 @@
                                 <input type="text" class="form-control" id="name" name="name">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Foto</label>
-                                <div class="input-group mb-3">
-                                    <input type="file" class="form-control" id="photo" name="photo">
-                                </div>
-                            </div>
-                            <div class="mb-3">
                                 <label for="NIM" class="form-label">Nomor Kartu Pegawai/NIP</label>
                                 <input type="text" name="nim" id="nim" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label for="Pekerjaan" class="form-label">Pekerjaan</label>
-                                <input type="text" class="form-control" id="pekerjaan" name="pekerjaan">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Alamat Email</label>
