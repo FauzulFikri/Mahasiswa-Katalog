@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\User\UserHomeController;
 use App\Http\Controllers\User\UserLoginController;
 use App\Http\Controllers\Front\FrontHomeController;
-use App\Http\Controllers\User\UserProfileController;
+use App\Http\Controllers\Front\FrontUserController;
 use App\Http\Controllers\User\UserStudentController;
 
 Route::get('/skill', function () {
@@ -19,6 +19,7 @@ Route::get('/peserta', function () {
 });
 
 Route::get('/', [FrontHomeController::class, 'show'])->name('index');
+Route::post('/admin/user/store', [FrontUserController::class, 'store'])->name('admin_user_store');
 
 Route::get('/user/register', function () {
     return view('user.register');
@@ -67,3 +68,7 @@ Route::get('/user/user/delete', [UserStudentController::class, 'delete'])->name(
 /*Route::get('/user/user/edit', [UserProfileController::class, 'index'])->name('user_user_edit');
 Route::get('/user/user/create', [UserProfileController::class, 'create'])->name('user_user_create');
 Route::post('/user/user/profile-submit', [UserProfileController::class, 'profile_submit'])->name('user_profile_submit');*/
+
+/* Register User */
+Route::get('/user/register', [FrontUserController::class, 'create'])->name('front_user_create');
+Route::post('/user/register', [FrontUserController::class, 'store'])->name('front_user_store');

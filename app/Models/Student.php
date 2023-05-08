@@ -16,7 +16,7 @@ class Student extends Model
     ];
 
     protected $fillable = [
-        'name', 'nim', 'photo', 'jurusan', 'alamat', 'tahun_masuk', 'no_telp',
+        'name', 'no_pengenal', 'photo', 'no_telp',
         'deskripsi', 'token'
     ];
 

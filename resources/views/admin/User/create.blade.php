@@ -13,6 +13,10 @@
                     <input type="text" class="form-control" id="Name" name="name">
                 </div>
                 <div class="mb-3">
+                    <label for="" class="form-label">No Pengenal</label>
+                    <input type="text" class="form-control" id="no_pengenal" name="no_pengenal">
+                </div>
+                <div class="mb-3">
                     <label for="" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="Email" name="email" placeholder="enter here"  >
                 </div>

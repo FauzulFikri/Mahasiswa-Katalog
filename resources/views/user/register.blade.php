@@ -52,26 +52,27 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  <form>
+                                  <form method="POST" action="{{ route('front_user_store') }}" enctype="multipart/form-data">
+                                    @csrf
                                     <div class="mb-3">
-                                        <label for="name" class="form-label">Nama Mahasiswa</label>
-                                        <input type="text" class="form-control" id="name" name="name">
+                                        <label for="" class="form-label">Nama Mahasiswa</label>
+                                        <input type="text" class="form-control" id="Name" name="name">
                                     </div>  
                                     <div class="mb-3">
-                                        <label for="NIM" class="form-label">NIM</label>
-                                        <input type="text" name="nim" id="nim" class="form-control">
+                                        <label for="" class="form-label">NIM</label>
+                                        <input type="text" name="no_pengenal" id="no_pengenal" class="form-control">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="email" class="form-label">Alamat Email</label>
-                                        <input type="email" class="form-control" id="email" name="email">
+                                        <label for="" class="form-label">Alamat Email</label>
+                                        <input type="email" class="form-control" id="Email" name="email">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="Password" name="Password">
+                                        <label for="" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password">
                                     </div>
                                     <div class=" mb-3">
-                                        <label class="form-label" for="form3Example4cdg">Repeat your password</label>
-                                        <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                                        <label class="form-label" for="">Repeat your password</label>
+                                        <input type="password" id="password" class="form-control form-control-lg" name="password_confirmation">
                                     </div>
                                       <div class="form-check d-flex justify-content-center mb-3">
                                         <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
@@ -79,11 +80,11 @@
                                           I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
                                         </label>
                                       </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="submit" class="btn btn-primary">Register</button>
+                                    </div>
                                   </form>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="submit" class="btn btn-primary">Register</button>
                                 </div>
                               </div>
                             </div>
@@ -96,26 +97,27 @@
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              <form>
+                              <form method="POST" action="{{ route('front_user_store') }}" enctype="multipart/form-data">
+                                @csrf
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Nama Dosen</label>
-                                    <input type="text" class="form-control" id="name" name="name">
+                                    <label for="" class="form-label">Nama Dosen</label>
+                                    <input type="text" class="form-control" id="Name" name="name">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="NIM" class="form-label">Nomor Kartu Pegawai</label>
-                                    <input type="text" name="nim" id="nim" class="form-control">
+                                    <label for="" class="form-label">Nomor Kartu Pegawai</label>
+                                    <input type="text" name="no_pengenal" id="no_pengenal" class="form-control">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Alamat Email</label>
-                                    <input type="email" class="form-control" id="email" name="email">
+                                    <label for="" class="form-label">Alamat Email</label>
+                                    <input type="email" class="form-control" id="Email" name="email">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="Password" name="Password">
+                                    <label for="" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password">
                                 </div>
                                 <div class=" mb-3">
-                                    <label class="form-label" for="form3Example4cdg">Repeat your password</label>
-                                    <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                                    <label class="form-label" for="">Repeat your password</label>
+                                    <input type="password" id="password" class="form-control form-control-lg" name="password_confirmation" >
                                 </div>
                                   <div class="form-check d-flex justify-content-center mb-3">
                                     <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
@@ -123,11 +125,11 @@
                                       I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
                                     </label>
                                   </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="submit" class="btn btn-primary">Register</button>
+                                </div>
                               </form>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="submit" class="btn btn-primary">Register</button>
                             </div>
                           </div>
                         </div>
@@ -140,39 +142,41 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <form>
+                          <form method="POST" action="{{ route('front_user_store') }}" enctype="multipart/form-data">
+                            @csrf
                             <div class="mb-3">
-                                <label for="name" class="form-label">Nama Tenaga Kependidikan</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <label for="" class="form-label">Nama Tenaga Kependidikan</label>
+                                <input type="text" class="form-control" id="Name" name="name">
                             </div>
                             <div class="mb-3">
-                                <label for="NIM" class="form-label">Nomor Kartu Pegawai/NIP</label>
-                                <input type="text" name="nim" id="nim" class="form-control">
+                                <label for="" class="form-label">Nomor Kartu Pegawai/NIP</label>
+                                <input type="text" name="no_pengenal" id="no_pengenal" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Alamat Email</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                <label for="" class="form-label">Alamat Email</label>
+                                <input type="email" class="form-control" id="Email" name="email">
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="Password" name="Password">
+                                <label for="" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password">
                             </div>
                             <div class=" mb-3">
-                                <label class="form-label" for="form3Example4cdg">Repeat your password</label>
-                                <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                                <label class="form-label" for="">Repeat your password</label>
+                                <input type="password" id="password" class="form-control form-control-lg" name="password_confirmation">
                             </div>
                               <div class="form-check d-flex justify-content-center mb-3">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" >
                                 <label class="form-check-label" for="form2Example3g">
                                   I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
                                 </label>
                               </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="submit" class="btn btn-primary">Register</button>
+                            </div>
                           </form>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="submit" class="btn btn-primary">Register</button>
-                        </div>
+                        
                       </div>
                     </div>
                   </div>

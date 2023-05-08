@@ -25,12 +25,14 @@ class AdminUserController extends Controller
     {
         $request->validate([
             'name' => 'required',
+            'no_pengenal' => 'required',
             'email' => 'required|email',
             'password' => 'required|confirmed',
         ]);
 
         $tambah = new Student();
         $tambah->name = $request->name;
+        $tambah->no_pengenal = $request->no_pengenal;
         $tambah->save();
 
         $store = new User();
