@@ -9,9 +9,11 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Laravel\Scout\Searchable;
 
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+    // use Searchable;
 
     protected $table = 'users';
 
@@ -23,18 +25,16 @@ class User extends Authenticatable
         'name', 'email', 'password', 'token'
     ];
 
-    /*
-    public function toSearchableArray()
-        {
-            return [
-                'name' => $this->name,
-                'nim' => $this->nim,
-                'jurusan' => $this->jurusan,
-                'tahun_masuk' => $this->tahun_masuk,
-                'no_telp' => $this->no_telp,
-                'deskripsi' => $this->deskripsi,
-            ];
-        }
-    */
-
+    // public function toSearchableArray()
+    //     {
+    //         return [
+    //             'name' => $this->name,
+    //             'nim' => $this->nim,
+    //             'jurusan' => $this->jurusan,
+    //             'tahun_masuk' => $this->tahun_masuk,
+    //             'no_telp' => $this->no_telp,
+    //             'deskripsi' => $this->deskripsi,
+    //         ];
+    //     }
+    
 }

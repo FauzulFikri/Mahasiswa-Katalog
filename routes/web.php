@@ -10,15 +10,16 @@ use App\Http\Controllers\Front\FrontHomeController;
 use App\Http\Controllers\Front\FrontUserController;
 use App\Http\Controllers\User\UserStudentController;
 
-Route::get('/skill', function () {
-    return view('skill');
-});
+// Route::get('/skill', function () {
+//     return view('skill');
+// });
 
 Route::get('/peserta', function () {
     return view('peserta');
 });
 
 Route::get('/', [FrontHomeController::class, 'show'])->name('index');
+Route::get('/skill', [FrontHomeController::class, 'show1'])->name('skill');
 Route::post('/admin/user/store', [FrontUserController::class, 'store'])->name('admin_user_store');
 
 Route::get('/user/register', function () {
@@ -48,6 +49,7 @@ Route::middleware('admin:admin')->group(function (){
 
 /* User Login */
 Route::get('/user/home', [UserHomeController::class, 'index'])->name('user_home');
+Route::get('/user/home', [UserHomeController::class, 'show'])->name('user_home');
 Route::get('/user/login', [UserLoginController::class, 'index'])->name('user_login');
 Route::post('/user/login-submit', [UserLoginController::class, 'login_submit'])->name('user_login_submit');
 Route::get('/user/logout', [UserLoginController::class, 'logout'])->name('user_logout');

@@ -114,7 +114,7 @@
           <div class="col-sm-6 col-md-8">
                 <div class="card " style="height: 300px;"> 
                     <div class="card-header">
-                      <h2><b>About</b></h2>
+                      <h2><b>About You</b></h2>
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">Special title treatment</h5>
@@ -128,30 +128,45 @@
                     </div>
                 </div>
           </div>
-      </div>       
-      <div  class="potition-relative">
-        <div class="  text-center ">
-          <h1 style="font-family: Prata;">AYO TEMUKAN BAKAT <br> KAMU CARI</h1>
-          <div class="row g-3 p-4">
-           
-          </div>
-        </div>
-    <div class="row g-2">
-      <div class="col-6">
-        <img style="height: 300px;" src="{{ asset('img/3.jpg')}}" alt="">
+      </div> 
       </div>
-      <div class="col-6">
-        <div class="">
-          <h1 style="font-family: Prata;">Gunakan Bakat-Bakat Terbaik<br>Universitas Negeri Padang</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit rem 
-            commodi ex aliquam fugiat velit! Vel, molestias optio, 
-            autem nesciunt iure provident rem sit libero mollitia ad delectus error laudantium.</p>
-          
+      <div class=" m-5 text-center ">
+        <h1 style="font-family: Prata;">AYO TEMUKAN BAKAT <br> KAMU CARI</h1>
+        
+        <div class="row gy-5 p-4">
+          @foreach ($talents as $talent)
+            <div class="col-4">
+              <div class="card" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+                <div class="card-body">
+                  <h5 class="card-title text-center">{{ $talent->kategori }}</h5>
+                  <p class="card-text text-end">1000 peserta
+                  </p>
+                  <a href="">see more</a>
+                </div>
+              </div>
+            </div>
+          @endforeach 
         </div>
+      </div>
+  
+  <div class="row g-2">
+    <div class="col-6 p-2">
+      <img style="height: 300px;" src="{{ asset('img/3.jpg') }}" alt="">
+    </div>
+    <div class="col-6">
+      <div class="p-5 ">
+        <h1 style="font-family: Prata;">Gunakan Bakat-Bakat Terbaik<br>Universitas Negeri Padang</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit rem 
+          commodi ex aliquam fugiat velit! Vel, molestias optio, 
+          autem nesciunt iure provident rem sit libero mollitia ad delectus error laudantium.</p>
+        
       </div>
     </div>
-      </div>
-     
+  </div>
+   
+
+
+<br><br>
 <div style="padding-left: 20px; padding-right: 20px;">
 <div class="text-white" style="background-color: #472183; ">
 <br>
@@ -213,6 +228,8 @@
   </div>
 </div>
 </div>
+
+      
   
   <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

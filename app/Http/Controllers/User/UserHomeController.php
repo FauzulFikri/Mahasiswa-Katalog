@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Talent;
 use Illuminate\Http\Request;
 
 class UserHomeController extends Controller
@@ -16,5 +17,11 @@ class UserHomeController extends Controller
         //     $user = User::all();
         // }
         return view('user.home');
+ 
     }
+    public function show()
+        {
+            $talents = Talent::all();
+            return view('user.home', compact('talents'));
+        }
 }
