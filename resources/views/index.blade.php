@@ -29,7 +29,7 @@
                   </li>
                   <li class="nav-item">
                     <!-- <a class="nav-link text-white" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Find Talent</a> -->
-                    <a class="nav-link active text-white" href="#">Find Talent</a>
+                    <a class="nav-link active text-white" href="#">Talent</a>
                   
                   </li>
                 </ul>
@@ -90,7 +90,7 @@
                       <h5 class="card-title text-center">{{ $talent->kategori }}</h5>
                       <p class="card-text text-end">1000 peserta
                       </p>
-                      <a href="">see more</a>
+                      <a href="{{ route('skill') }}">see more</a>
                     </div>
                   </div>
                 </div>
@@ -150,7 +150,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <h5 class="color-base mb-2 " style="font-weight: bold; font-size: 20px;">Talent UNP</h5>
-            <p class="color-base " style="font-size: 18px;"> Mengumpulakn Bakat Terbaik <br> Universitas Negeri Padang</p>
+            <p class="color-base " style="font-size: 18px;"> Mengumpulkan Bakat Terbaik <br> Universitas Negeri Padang</p>
             <br>
         </div>
         <div class="col-md-6 col-lg-2">

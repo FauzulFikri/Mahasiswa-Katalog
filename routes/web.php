@@ -10,15 +10,16 @@ use App\Http\Controllers\Front\FrontHomeController;
 use App\Http\Controllers\User\UserProfileController;
 use App\Http\Controllers\User\UserStudentController;
 
-Route::get('/skill', function () {
-    return view('skill');
-});
+// Route::get('/skill', function () {
+//     return view('skill');
+// });
 
 Route::get('/peserta', function () {
     return view('peserta');
 });
 
 Route::get('/', [FrontHomeController::class, 'show'])->name('index');
+Route::get('/skill', [FrontHomeController::class, 'show1'])->name('skill');
 
 Route::get('/user/register', function () {
     return view('user.register');

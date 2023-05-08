@@ -5,41 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="{{ asset('img/logounp.png') }}"/>
         <title>Talent UNP</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-            crossorigin="anonymous">
-            <link rel="stylesheet" href="style.css">
-    </head>
-    <body style="background-color: #F1F6F5;">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183;">
-            <div class="container text-white">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <img style="height: 30px;" src="img/logounp.png" alt="">
-              <a class="navbar-brand text-white" href="#">Talent UNP</a>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <!-- <a class="nav-link text-white" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Find Talent</a> -->
-                    <a class="nav-link active text-white" href="#">Find Talent</a>
-                  
-                  </li>
-                </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                    <a class="nav-link active text-white" aria-current="page" href="/login.html">Login</a>
-              </div>
-            </div>
-             </div>
-            
-          </nav>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+                integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+                crossorigin="anonymous">
+                <link rel="stylesheet" href="style.css">
+        </head>
+        <body style="background-color: #F1F6F5;">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183; height: 70px">
+                <div class="container text-white">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <img style="height: 30px;" src="{{ asset('img/logounp.png') }}" alt="">
+                  <a class="navbar-brand text-white" style="h3" href="#">Talent UNP</a>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <!-- <a class="nav-link text-white" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Find Talent</a> -->
+                        <a class="nav-link active text-white" href="#">Talent</a>
+                      
+                      </li>
+                    </ul>
+                        <form class="d-flex" action="" method="get">
+                          <input class="form-control me-2 " type="text"  name="keyword" placeholder="Search" aria-label="Search">
+                        </form>
+                        <a class="nav-link active text-white" aria-current="page" href="{{ route('user_login') }}">Login</a>
+                  </div>
+                </div>
+                 </div>
+                
+              </nav>
 
 
 <br>
@@ -225,7 +227,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <h5 class="color-base mb-2 " style="font-weight: bold; font-size: 20px;">Talent UNP</h5>
-            <p class="color-base " style="font-size: 18px;"> Mengumpulakn Bakat Terbaik <br> Universitas Negeri Padang</p>
+            <p class="color-base " style="font-size: 18px;"> Mengumpulkan Bakat Terbaik <br> Universitas Negeri Padang</p>
             <br>
         </div>
         <div class="col-md-6 col-lg-2">

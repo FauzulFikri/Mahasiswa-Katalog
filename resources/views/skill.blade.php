@@ -5,72 +5,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="{{ asset('img/logounp.png') }}"/>
         <title>Talent UNP</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-            crossorigin="anonymous">
-            <link rel="stylesheet" href="style.css">
-    </head>
-    <body style="background-color: #F1F6F5;">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183;">
-            <div class="container text-white">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <img style="height: 30px;" src="img/logounp.png" alt="">
-              <a class="navbar-brand text-white" href="#">Talent UNP</a>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <!-- <a class="nav-link text-white" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Find Talent</a> -->
-                    <a class="nav-link active text-white" href="#">Find Talent</a>
-                  
-                  </li>
-                </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                    <a class="nav-link active text-white" aria-current="page" href="/login.html">Login</a>
-              </div>
-            </div>
-             </div>
-            
-          </nav>
-
-        
-        <div class="container p-5"> 
-         
-          <div class="card text-start " style="background-color: #4E31AA; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.504);">
-            <div class="row">
-              <div class="col-sm-6 col-md-6 p-5 text-white">
-                  <h1 style="font-family: Prata;"> Work the Way <br> You Want </h1>
-                  
-                  <p >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cupiditate eos porro a, 
-                    unde corrupti fuga ea eum vero, saepe nemo accusamus nesciunt tempora! Aut ducimus porro perferendis id hic!
-                  </p>
-              </div>
-              <div class="col-md-6">
-                <div class="card w-300px">
-                  <img src="img/5.jpg" alt="...">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+                integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+                crossorigin="anonymous">
+                <link rel="stylesheet" href="style.css">
+        </head>
+        <body style="background-color: #F1F6F5;">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #472183; height: 70px">
+                <div class="container text-white">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <img style="height: 30px;" src="{{ asset('img/logounp.png') }}" alt="">
+                  <a class="navbar-brand text-white" style="h3" href="#">Talent UNP</a>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <!-- <a class="nav-link text-white" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Find Talent</a> -->
+                        <a class="nav-link active text-white" href="#">Talent</a>
+                      
+                      </li>
+                    </ul>
+                        <form class="d-flex" action="" method="get">
+                          <input class="form-control me-2 " type="text"  name="keyword" placeholder="Search" aria-label="Search">
+                        </form>
+                        <a class="nav-link active text-white" aria-current="page" href="{{ route('user_login') }}">Login</a>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
- 
+                 </div>
+                
+              </nav>
+
 <br>
       <div class="container">
+        <h1 style="font-family: Prata;" class="text-center p-4">Bakat-Bakat Terbaik <br> Universitas Negeri Padang</h1>
       <div class="row row-cols-1 row-cols-md-4 g-3">
+        @foreach ($subtalent as $subtalent)
         <div class="col">
             <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
+              
               <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
+                <h5 class="card-title text-center">{{ $subtalent->nama_bakat }} </h5>
                 <p class="text-center p-2">
                   <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
                         height="150px">
@@ -83,281 +65,34 @@
                   </p></div>
               </div>
               </div>
+              
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 pesertas
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-              <div class="card-body">
-                <h5 class="card-title text-center"> web develoment</h5>
-                <p class="text-center p-2">
-                  <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                        height="150px">
-                  </p>
-                <div class="d-flex justify-content-between py-3">
-                  <div>
-                      <a  class="text-end" href="">see more</a>
-                  </div>
-                  <div ><p class="card-text text-end">1000 peserta
-                  </p></div>
-              </div>
-              </div>
-            </div>
-          </div>
-        <div class="col">
-          <div class="card h-100" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
-            <div class="card-body">
-              <h5 class="card-title text-center"> web develoment</h5>
-              <p class="text-center p-2">
-                <img src="{{ asset('img/d.jpg') }}" alt="" class="img-fluid text-start " width="150px"
-                      height="150px">
-                </p>
-              <div class="d-flex justify-content-between py-3">
-                <div>
-                    <a  class="text-end" href="">see more</a>
-                </div>
-                <div ><p class="card-text text-end">1000 peserta
-                </p></div>
-            </div>
-            </div>
-          </div>
+          @endforeach
+        </div>
+      </div>
+<br><br>
+<div class="p-2">
+  <div class="card text-start p-4 " style="background-color: #4E31AA; box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.504);">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 p-5 text-white">
+          <h1 style="font-family: Prata;"> Temukan Bakatnya <br> Sekarang Juga </h1>
+          
+          <p >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cupiditate eos porro a, 
+            unde corrupti fuga ea eum vero, saepe nemo accusamus nesciunt tempora! Aut ducimus porro perferendis id hic!
+          </p>
+      </div>
+      <div class="col-md-6">
+        <div class="card w-300px">
+          <img src="img/5.jpg" alt="...">
         </div>
       </div>
     </div>
-    <br><br>  
+  </div>
+</div>
+      
+
 <br><br>
 <div style="padding-left: 20px; padding-right: 20px;">
   <div class="text-white" style="background-color: #472183; ">
@@ -367,7 +102,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <h5 class="color-base mb-2 " style="font-weight: bold; font-size: 20px;">Talent UNP</h5>
-            <p class="color-base " style="font-size: 18px;"> Mengumpulakn Bakat Terbaik <br> Universitas Negeri Padang</p>
+            <p class="color-base " style="font-size: 18px;"> Mengumpulkan Bakat Terbaik <br> Universitas Negeri Padang</p>
             <br>
         </div>
         <div class="col-md-6 col-lg-2">
