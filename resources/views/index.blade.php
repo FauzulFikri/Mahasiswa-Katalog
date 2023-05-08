@@ -82,9 +82,9 @@
           <div class=" m-5 text-center ">
             <h1 style="font-family: Prata;">AYO TEMUKAN BAKAT <br> KAMU CARI</h1>
             
-            <div class="row g-3 p-4">
+            <div class="row gy-5 p-4">
               @foreach ($talents as $talent)
-                <div class="col-4 w-25">
+                <div class="col-4">
                   <div class="card" style="background-color: #E7F6F2; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.54);">
                     <div class="card-body">
                       <h5 class="card-title text-center">{{ $talent->kategori }}</h5>

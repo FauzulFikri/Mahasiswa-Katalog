@@ -13,4 +13,6 @@ class FrontHomeController extends Controller
         $talents = Talent::all();
         return view('index', compact('talents'));
     }
+
+   
 }

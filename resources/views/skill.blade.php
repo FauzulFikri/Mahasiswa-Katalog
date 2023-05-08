@@ -295,7 +295,7 @@
                   <div>
                       <a  class="text-end" href="">see more</a>
                   </div>
-                  <div ><p class="card-text text-end">1000 peserta
+                  <div ><p class="card-text text-end">1000 pesertas
                   </p></div>
               </div>
               </div>

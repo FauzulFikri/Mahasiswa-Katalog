@@ -47,6 +47,7 @@ Route::middleware('admin:admin')->group(function (){
 
 /* User Login */
 Route::get('/user/home', [UserHomeController::class, 'index'])->name('user_home');
+Route::get('/user/home', [UserHomeController::class, 'show'])->name('user_home');
 Route::get('/user/login', [UserLoginController::class, 'index'])->name('user_login');
 Route::post('/user/login-submit', [UserLoginController::class, 'login_submit'])->name('user_login_submit');
 Route::get('/user/logout', [UserLoginController::class, 'logout'])->name('user_logout');
